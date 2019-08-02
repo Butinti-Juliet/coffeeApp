@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-title>
+            Coffee Order
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-image">
+    <div class="cen">
+        <h1>
+            <font size="6">WELCOME TO OUR COFFEE ORDERING APP!!!!</font>
+        </h1>
+
+        <div class="coff">
+
+            <ion-grid>
+                <ion-row>
+
+                    <ion-col>
+                        <img src="assets/cap.jpg" alt="Trulli" width="350" height="200">
+                        <ion-button [routerLink]="['/coffee']" color="dark" expand="full">CAPPUCCINO</ion-button>
+                    </ion-col>
+
+
+                    <ion-col>
+                        <img src="assets/moch.jpg" alt="Trulli" width="350" height="200">
+                        <ion-button [routerLink]="['/coffee1']" color="dark" expand="full">MOCHA</ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <img src="assets/flat.jpg" alt="Trulli" width="350" height="200">
+                        <ion-button [routerLink]="['/coffee2']" color="dark" expand="full">FLAT WHITE</ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <img src="assets/irish.jpg" alt="Trulli" width="350" height="200">
+                        <ion-button [routerLink]="['/coffee3']" color="dark" expand="full">Irish</ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <br>
+        <br>
+
+
+
+    </div>
+</ion-content>
