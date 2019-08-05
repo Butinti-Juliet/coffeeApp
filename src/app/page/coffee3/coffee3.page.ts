@@ -18,7 +18,7 @@ export class Coffee3Page implements OnInit {
 
   ngOnInit() {
   }
-  onPriceMinus1(){
+  onPriceMinusBtn1(){
     this.price1-=16;
     if(this.price1<0)
       {
@@ -27,12 +27,12 @@ export class Coffee3Page implements OnInit {
       
    this.total=this.price1 + this.price2 + this.price3 + this.price4;
   }
-  onPriceAdd1(){
+  onPriceAddBtn1(){
     this.price1+=16;
     this.total=this.price1 + this.price2 + this.price3 + this.price4;
   
   }
-  onPriceMinus2(){
+  onPriceMinusBtn2(){
     this.price2-=11;
     if(this.price2<0)
       {
@@ -41,12 +41,12 @@ export class Coffee3Page implements OnInit {
       this.total=this.price1 + this.price2 + this.price3 + this.price4;
   
   }
-  onPriceAdd2(){
+  onPriceAddBtn2(){
     this.price2+=11;
     this.total=this.price1 + this.price2 + this.price3 + this.price4;
   
   }
-  onPriceMinus3(){
+  onPriceMinusBtn3(){
     this.price3-=13;
     if(this.price3<0)
       {
@@ -55,12 +55,12 @@ export class Coffee3Page implements OnInit {
       this.total=this.price1 + this.price2 + this.price3 + this.price4;
   
   }
-  onPriceAdd3(){
+  onPriceAddBtn3(){
     this.price3+=13;
     this.total=this.price1 + this.price2 + this.price3 + this.price4;
   
   }
-  onPriceMinus4(){
+  onPriceMinusBtn4(){
     this.price4-=21;
     if(this.price4<0)
       {
@@ -69,7 +69,7 @@ export class Coffee3Page implements OnInit {
       this.total=this.price1 + this.price2 + this.price3 + this.price4;
   
   }
-  onPriceAdd4(){
+  onPriceAddBtn4(){
     this.price4+=21;
     this.total=this.price1 + this.price2 + this.price3 + this.price4;
   

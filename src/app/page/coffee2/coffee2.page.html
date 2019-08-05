@@ -7,7 +7,7 @@
 
 <ion-content class="background-image">
 
-    <div class="order">
+    <div class="white">
 
 
 
@@ -25,8 +25,8 @@
                             </font>
                         </h4>
                         <h4>Price:&nbsp;R{{price1}}</h4>
-                        <ion-button color="dark" (click)="onPriceMinus1()">-</ion-button>
-                        <ion-button color="dark" (click)="onPriceAdd1()">+</ion-button>
+                        <ion-button color="dark" (click)="onPriceMinusBtn1()">-</ion-button>
+                        <ion-button color="dark" (click)="onPriceAddBtn1()">+</ion-button>
                     </ion-col>
 
                     <ion-col>
@@ -38,8 +38,8 @@
                             </font>
                         </h4>
                         <h4>Price:&nbsp;R{{price2}}</h4>
-                        <ion-button color="dark" (click)="onPriceMinus2()">-</ion-button>
-                        <ion-button color="dark" (click)="onPriceAdd2()">+</ion-button>
+                        <ion-button color="dark" (click)="onPriceMinusBtn2()">-</ion-button>
+                        <ion-button color="dark" (click)="onPriceAddBtn2()">+</ion-button>
 
 
                     </ion-col>
@@ -57,8 +57,8 @@
                             </font>
                         </h4>
                         <h4>Price:&nbsp;R{{price3}}</h4>
-                        <ion-button color="dark" (click)="onPriceMinus3()">-</ion-button>
-                        <ion-button color="dark" (click)="onPriceAdd3()">+</ion-button>
+                        <ion-button color="dark" (click)="onPriceMinusBtn3()">-</ion-button>
+                        <ion-button color="dark" (click)="onPriceAddBtn3()">+</ion-button>
                     </ion-col>
                     <ion-col>
 
@@ -69,16 +69,20 @@
                             </font>
                         </h4>
                         <h4>Price:&nbsp;R{{price4}}</h4>
-                        <ion-button color="dark" (click)="onPriceMinus4()">-</ion-button>
-                        <ion-button color="dark" (click)="onPriceMinus4()">+</ion-button>
+                        <ion-button color="dark" (click)="onPriceMinusBtn4()">-</ion-button>
+                        <ion-button color="dark" (click)="onPriceAddBtn4()">+</ion-button>
                     </ion-col>
                 </ion-row>
             </ion-grid>
         </ion-card>
         <ion-card>
-            <!-- <h4>Sub Total:&nbsp;R{{subtotal}}</h4> -->
-            <h4>Total:&nbsp;R{{total}}.00</h4>
-            <ion-button color="dark" (click)="print()">Check Out</ion-button>
+
+
+            <div class="total">
+
+                <h4>Total:&nbsp;R{{total}}.00</h4>
+                <ion-button color="dark" (click)="print()">Check Out</ion-button>
+            </div>
         </ion-card>
     </div>
 

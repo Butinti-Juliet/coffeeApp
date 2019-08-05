@@ -3,17 +3,20 @@ h4 {
     color: black;
 }
 
-ion-title {
-    font-family: Apple Chancery, cursive;
-    text-decoration: overline;
-    text-align: center;
-}
-
-.order {
-    // background-color: antiquewhite;
+.white {
     text-align: center;
 }
 
 .background-image {
     --background: url("say3.jpg") 0 0/100% 100% no-repeat;
+}
+
+.total {
+    text-align: center;
+}
+
+ion-title {
+    font-family: Apple Chancery, cursive;
+    text-decoration: overline;
+    text-align: center;
 }
