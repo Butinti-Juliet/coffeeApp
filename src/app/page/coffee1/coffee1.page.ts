@@ -13,6 +13,11 @@ price3=0;
 price4=0;
 price=12;
 
+Q1=0;
+Q2=0;
+Q3=0;
+Q4=0;
+
 total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
 
 subtotal=0;
@@ -20,6 +25,7 @@ subtotal=0;
   constructor() { }
 
   onPriceMinusBtn1(){
+    this.Q1-=1;
     this.price1-=6;
     if(this.price1<0)
       {
@@ -29,11 +35,13 @@ subtotal=0;
    this.total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
   }
   onPriceAddBtn1(){
+    this.Q1+=1;
     this.price1+=6;
     this.total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
   
   }
   onPriceMinusBtn2(){
+    this.Q2-=1;
     this.price2-=8;
     if(this.price2<0)
       {
@@ -43,11 +51,13 @@ subtotal=0;
   
   }
   onPriceAddBtn2(){
+    this.Q2+=1;
     this.price2+=8;
     this.total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
   
   }
   onPriceMinusBtn3(){
+    this.Q3-=1;
     this.price3-=14;
     if(this.price3<0)
       {
@@ -57,11 +67,13 @@ subtotal=0;
   
   }
   onPriceAddBtn3(){
+    this.Q3+=1;
     this.price3+=14;
     this.total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
   
   }
   onPriceMinusBtn4(){
+    this.Q4-=1;
     this.price4-=11;
     if(this.price4<0)
       {
@@ -71,6 +83,7 @@ subtotal=0;
   
   }
   onPriceAddBtn4(){
+    this.Q4+=1;
     this.price4+=11;
     this.total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
   
