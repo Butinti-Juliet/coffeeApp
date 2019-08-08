@@ -9,11 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoffeePage implements OnInit {
 
-price1=6;
-price2=8;
-price3=14;
-price4=10;
-total=this.price1 + this.price2 + this.price3 + this.price4;
+price1=0;
+price2=0;
+price3=0;
+price4=0;
+price=13;
+total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
 subtotal=0;
 
   constructor() { 
@@ -26,11 +27,11 @@ onPriceMinusBtn1(){
       this.price1=0
     }
     
- this.total=this.price1 + this.price2 + this.price3 + this.price4;
+ this.total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
 }
 onPriceAddBtn1(){
   this.price1+=6;
-  this.total=this.price1 + this.price2 + this.price3 + this.price4;
+  this.total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
 
 }
 onPriceMinusBtn2(){
@@ -39,12 +40,12 @@ onPriceMinusBtn2(){
     {
       this.price2=0
     }
-    this.total=this.price1 + this.price2 + this.price3 + this.price4;
+    this.total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
 
 }
 onPriceAddBtn2(){
   this.price2+=8;
-  this.total=this.price1 + this.price2 + this.price3 + this.price4;
+  this.total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
 
 }
 onPriceMinusBtn3(){
@@ -53,12 +54,12 @@ onPriceMinusBtn3(){
     {
       this.price3=0
     }
-    this.total=this.price1 + this.price2 + this.price3 + this.price4;
+    this.total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
 
 }
 onPriceAddBtn3(){
   this.price3+=14;
-  this.total=this.price1 + this.price2 + this.price3 + this.price4;
+  this.total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
 
 }
 onPriceMinusBtn4(){
@@ -67,12 +68,12 @@ onPriceMinusBtn4(){
     {
       this.price4=0
     }
-    this.total=this.price1 + this.price2 + this.price3 + this.price4;
+    this.total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
 
 }
 onPriceAddBtn4(){
   this.price4+=10;
-  this.total=this.price1 + this.price2 + this.price3 + this.price4;
+  this.total=this.price + this.price1 + this.price2 + this.price3 + this.price4;
 
 }
 print(){
